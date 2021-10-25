@@ -7,7 +7,7 @@ blenderRender = Flask(__name__)
 
 @blenderRender.route("/")
 def hello():
-    os.system("blender -b test.blend");
+    os.system("sudo blender -b test.blend");
     return "Blender World!"
 
 if __name__ == "__main__":
